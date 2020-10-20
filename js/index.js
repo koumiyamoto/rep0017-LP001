@@ -2,9 +2,15 @@
 
 (function () {
   const headerChangeAt = 170;
+  const carouselHeight = 3000;
+  const parallaxSpeed = 0.5;
+  const parallaxMargin = 600;
 
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() > headerChangeAt) {
+    const dy = $(this).scrollTop();
+
+    // スクロール量に応じてheaderの見た目を変化させる
+    if (dy > headerChangeAt) {
       $(".header").addClass("smaller");
       $(".nav-item > a").removeClass("text-white").addClass("text-dark");
       $(".navbar-brand img").attr("src", "img/logo (1).png");
@@ -12,6 +18,16 @@
       $(".header").removeClass("smaller");
       $(".nav-item > a").removeClass("text-dark").addClass("text-white");
       $(".navbar-brand img").attr("src", "img/logo (2).png");
+    }
+
+    // パララックス
+    if (dy < carouselHeight) {
+      $("#parallax-box1").css(
+        "top",
+        dy * parallaxSpeed - parallaxMargin + "px"
+      );
+      // console.log(dy);
+      // console.log($("#parallax-box1").css("background-position"));
     }
   });
 })();
