@@ -1,0 +1,68 @@
+.html,
+body {
+  height: 5000px;
+}
+.header {
+  position: fixed;
+  z-index: 1080;
+  transition: 0.5s;
+  height: 90px;
+}
+.header.smaller {
+  background: white;
+  transition: 0.5s;
+  height: 60px;
+}
+.navbar-nav {
+  font-size: 14px;
+  font-family: serif;
+  height: 100%;
+}
+.nav-item {
+  transition: 1s;
+}
+.dropdown-menu {
+  border-radius: 0;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 210px;
+}
+.dropdown-item {
+  color: #cccccc;
+  border-bottom: solid 1px white;
+  font-size: small;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: 0.2s linear;
+}
+.dropdown-item:hover {
+  color: white;
+  background-color: #333333;
+}
+img.top-slide-image {
+  height: 800px;
+  object-fit: cover;
+  object-position: center 60%;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.carousel-caption-1 {
+  bottom: 45%;
+  font-size: 20px;
+  font-family: serif;
+}
+.carousel-caption-2 {
+  bottom: 40%;
+  font-size: 20px;
+  font-family: serif;
+}
+.carousel-caption-3 {
+  bottom: 40%;
+  right: 0%;
+  font-size: 20px;
+  font-family: serif;
+}
