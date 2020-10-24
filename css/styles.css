@@ -95,8 +95,15 @@ img.top-slide-image {
   font-size: 48px;
   background: transparent;
   position: absolute;
-  margin-top: -120px;
+  left: 200px;
+  margin-top: -82px;
 }
-.infomation_cards {
-  box-shadow: 10px;
+.infomations_wrapper {
+}
+.info_title {
+  font-family: serif;
+}
+.info_text {
+  font-family: serif;
+  font-size: 12px;
 }
