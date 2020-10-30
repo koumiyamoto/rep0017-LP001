@@ -1,6 +1,6 @@
 .html,
 body {
-  height: 5000px;
+  margin: 0;
 }
 .header {
   position: fixed;
@@ -97,12 +97,45 @@ img.top-slide-image {
   position: absolute;
   margin-top: -86px;
 }
-.infomations_wrapper {
-}
 .info_title {
   font-family: serif;
 }
 .info_text {
   font-family: serif;
   font-size: 12px;
+}
+.atmosphere_image {
+  padding: 120px 0;
+  background-image: url("../img/coffee-shop-1149155_1920.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.atmosphere_box {
+  font-family: serif;
+  width: 56%;
+}
+.atmosphere_text {
+  font-size: 48px;
+}
+.atmosphere_subtext {
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  margin-bottom: 160px;
+}
+.btn_atmosphere {
+  width: 150px;
+  background-color: #cfa670;
+  color: white;
+  font-size: 14px;
+}
+.cuisine_title {
+  font-size: 48px;
+  font-family: serif;
+}
+.cuisine_subtitle {
+  font-family: serif;
+  letter-spacing: 2px;
+}
+.cuisine_image img {
+  object-fit: cover;
 }
