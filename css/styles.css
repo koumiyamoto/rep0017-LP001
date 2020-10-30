@@ -7,6 +7,7 @@ body {
   z-index: 1080;
   transition: 0.5s;
   height: 90px;
+  max-width: 100%;
 }
 .header.smaller {
   background: white;
@@ -136,6 +137,9 @@ img.top-slide-image {
   font-family: serif;
   letter-spacing: 2px;
 }
+.cuisine_image {
+}
 .cuisine_image img {
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
