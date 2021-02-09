@@ -3,6 +3,8 @@
 (function () {
   const headerChangeAt = 170;
   const carouselHeight = 3000;
+  const cuisineHeight = 3001;
+  const cuisineHeightEnd = 6000;
   const parallaxSpeed = 0.5;
   const parallaxMargin = 600;
 
@@ -26,6 +28,16 @@
         "top",
         dy * parallaxSpeed - parallaxMargin + "px"
       );
+      // console.log(dy);
+      // console.log($("#parallax-box1").css("background-position"));
+    }
+    if (cuisineHeight > dy) {
+      $("#parallax-box2").css("top", 2500 + "px");
+      // console.log(dy);
+      // console.log($("#parallax-box1").css("background-position"));
+    }
+    if (cuisineHeight < dy < cuisineHeightEnd) {
+      $("#parallax-box2").css("top", dy * parallaxSpeed + 200 + "px");
       // console.log(dy);
       // console.log($("#parallax-box1").css("background-position"));
     }

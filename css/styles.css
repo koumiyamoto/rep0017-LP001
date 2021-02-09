@@ -1,13 +1,30 @@
-.html,
+html,
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+}
+div {
+  display: block;
+}
+.wrapper {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 .header {
+  box-sizing: border-box;
   position: fixed;
+  top: 0;
   z-index: 1080;
   transition: 0.5s;
   height: 90px;
-  max-width: 100%;
+  border: 0;
+}
+.header nav {
+  width: 100%;
+  border: 0;
 }
 .header.smaller {
   background: white;
@@ -70,6 +87,8 @@ img.top-slide-image {
   font-size: 20px;
   font-family: serif;
 }
+
+/* パララックス */
 .parallax-wrapper {
   position: relative;
   z-index: -1000;
@@ -81,12 +100,15 @@ img.top-slide-image {
 #parallax-box1 img {
   object-fit: cover;
 }
-.parallax-space {
-  height: 650;
+#parallax-box2 {
+  position: absolute;
+  top: 3000px;
 }
-.parallax-space {
-  background: transparent;
+#parallax-box2 img {
+  object-fit: cover;
 }
+
+/* メインコンテンツ */
 .main-content {
   margin-top: 500px;
   background-image: url("../background/vintage-wallpaper/vintage-wallpaper.png");
