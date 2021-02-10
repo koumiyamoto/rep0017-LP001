@@ -8,6 +8,9 @@
   const parallaxSpeed = 0.5;
   const parallaxMargin = 600;
 
+  // ランディング時にポートフォリオの簡単な説明モーダル表示
+  $("#description-modal").modal();
+
   $(window).on("scroll", function () {
     const dy = $(this).scrollTop();
 
